@@ -1,0 +1,11 @@
+spring:
+  thymeleaf:
+    mode: HTML
+  profiles:
+    active: dev #指定当前环境
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+
+comt.avatar: /images/avatar.png

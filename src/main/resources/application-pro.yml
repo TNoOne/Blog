@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/myBlog?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true  #sql\u8BED\u53E5\u6253\u5370
+logging:
+  level:
+    root: warn
+    com.wsk: info #\u65E5\u5FD7\u7EA7\u522B
+  file:
+    path: log/blog-pro.log #\u751F\u6210\u65E5\u5FD7\u8DEF\u5F84
+server:
+  port: 8081
